@@ -29,7 +29,7 @@
    easeOut：减速到0的缓动，也就是先快后慢；
    easeInOut：前半段从0开始加速，后半段减速到0的缓动
  */
-var Tween = {
+const Tween = {
     Linear: function (t, b, c, d) {
         return c * t / d + b;
     },
@@ -199,4 +199,5 @@ var Tween = {
         }
     }
 }
-Math.tween = Tween;
+
+export default Tween
